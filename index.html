@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Shop</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-blue-600 font-bold text-2xl">👟 Sport shop</h1>
+    <button class="relative">
+      🛒
+      <span id="cart-count" class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs px-2 rounded-full">0</span>
+    </button>
+  </header>
+
+  <!-- Loading Spinner -->
+  <div id="loading" class="flex justify-center items-center h-64">
+    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+  </div>
+
+  <!-- Products Grid -->
+  <main class="p-6">
+    <div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
